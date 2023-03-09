@@ -303,6 +303,17 @@ id<OTPublisherKitRtcStatsReportDelegate> _Nullable rtcStatsReportDelegate;
  */
 @property(nonatomic) BOOL publishVideo;
 
+/**
+ * Whether to make captions active.
+ * Refer `OTPublisherErrorCode` enum (defined in the OTError class)
+ * value `OTPublisherMissingAudioTrack`.
+ *
+ * The default value is FALSE.
+ *
+ * This is a beta feature.
+ */
+@property(nonatomic) BOOL publishCaptions;
+
 /** @name Setting publisher device configuration */
 
 /**

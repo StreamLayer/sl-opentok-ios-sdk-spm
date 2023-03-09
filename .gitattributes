@@ -1,0 +1,6 @@
+VonageWebRTC.xcframework/* filter=lfs diff=lfs merge=lfs -text
+VonageWebRTC.xcframework/ios-arm64 filter=lfs diff=lfs merge=lfs -text
+VonageWebRTC.xcframework/ios-arm64_x86_64-simulator filter=lfs diff=lfs merge=lfs -text
+VonageWebRTC.xcframework/macos-arm64_x86_64 filter=lfs diff=lfs merge=lfs -text
+VonageWebRTC.xcframework/Info.plist filter=lfs diff=lfs merge=lfs -text
+VonageWebRTC.xcframework/** filter=lfs diff=lfs merge=lfs -text

@@ -14,7 +14,7 @@
 		</data>
 		<key>Headers/OTError.h</key>
 		<data>
-		pv8gjUxGUieOVSiNXV+iGVodpvU=
+		PJvdXmS45K0sVjTq2dGkdClP6ks=
 		</data>
 		<key>Headers/OTMuteForcedInfo.h</key>
 		<data>
@@ -30,7 +30,7 @@
 		</data>
 		<key>Headers/OTPublisherKit.h</key>
 		<data>
-		PSFXVb7/10v3TDML8XZXwQgPkrc=
+		g3XT6TCQ0ah1urJkOch1SzRWBg4=
 		</data>
 		<key>Headers/OTSession.h</key>
 		<data>
@@ -38,7 +38,7 @@
 		</data>
 		<key>Headers/OTStream.h</key>
 		<data>
-		RGRkB+W/ngn8bKS6M3feSFv0aLw=
+		tOJtZ3mopOJFwu/8Uah+icbela0=
 		</data>
 		<key>Headers/OTSubscriber.h</key>
 		<data>
@@ -46,7 +46,7 @@
 		</data>
 		<key>Headers/OTSubscriberKit.h</key>
 		<data>
-		UF88SA7URBSv7LGJpJ32MpQqa4E=
+		nFoJUAGRjjI8WL7t0U/rj2hkXFw=
 		</data>
 		<key>Headers/OTVideoKit.h</key>
 		<data>
@@ -62,7 +62,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		h5eo7v3elg1nWHSQlywP6MSzIis=
+		4kPZeBZ73mVNr+HLeLojfLHp5CY=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -101,11 +101,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			pv8gjUxGUieOVSiNXV+iGVodpvU=
+			PJvdXmS45K0sVjTq2dGkdClP6ks=
 			</data>
 			<key>hash2</key>
 			<data>
-			w+4tcJ3z9JLKKOUulKTsMwkc6eIxtEgucEJQEqKNqmM=
+			3sdynJv8wjWE8XephCUygqVpE1y6u9ALGLgGTWxKYtk=
 			</data>
 		</dict>
 		<key>Headers/OTMuteForcedInfo.h</key>
@@ -145,11 +145,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			PSFXVb7/10v3TDML8XZXwQgPkrc=
+			g3XT6TCQ0ah1urJkOch1SzRWBg4=
 			</data>
 			<key>hash2</key>
 			<data>
-			gfoEXu2LZdJNAhRPZlNAb1Q9TEt4NVH5Jafjbg8ZqTA=
+			ePKQQr29UpqUYZpWuvkjTpTJg2oUiTYfqpK9RB6Tt8g=
 			</data>
 		</dict>
 		<key>Headers/OTSession.h</key>
@@ -167,11 +167,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			RGRkB+W/ngn8bKS6M3feSFv0aLw=
+			tOJtZ3mopOJFwu/8Uah+icbela0=
 			</data>
 			<key>hash2</key>
 			<data>
-			RQuOqTopdQsRZuFlHItOS4NBHMzV0Sl0i+btBEiVpJY=
+			+2y8Z5XNhVSqAyuBkZ72eKbsGx8P1gBkK2SpDWfxLQQ=
 			</data>
 		</dict>
 		<key>Headers/OTSubscriber.h</key>
@@ -189,11 +189,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			UF88SA7URBSv7LGJpJ32MpQqa4E=
+			nFoJUAGRjjI8WL7t0U/rj2hkXFw=
 			</data>
 			<key>hash2</key>
 			<data>
-			BZ4lOl/IIHBHgm9G/JGGqyJyZ/vMSY/Zijyo42/lSto=
+			2q1S0a5FlRph4tnxoABtBTah2h8bxSefTQv0VhKkACQ=
 			</data>
 		</dict>
 		<key>Headers/OTVideoKit.h</key>

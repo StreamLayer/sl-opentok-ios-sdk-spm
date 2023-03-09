@@ -107,7 +107,7 @@ typedef NS_ENUM(int32_t, OTPublisherErrorCode) {
     /** Ignore. Used internally. */
     OTPublisherSuccess = 0,
     
-    /** Attempting to publish to a disconnected session */
+    /** Attempting to publish or set captions to a disconnected session. */
     OTSessionDisconnected = 1010,
     
     /** Thread dispatch failure, out of memory, etc. */
@@ -116,6 +116,10 @@ typedef NS_ENUM(int32_t, OTPublisherErrorCode) {
     /** The publisher failed due to a WebRTC error. Check the error
      description for details. */
     OTPublisherWebRTCError = 1610,
+    
+    /** A captioning error which can be treated like a warning.
+     Video will continue to function as before. */
+    OTPublisherMissingAudioTrack = 4500,
 };
 
 /**
@@ -130,7 +134,7 @@ typedef NS_ENUM(int32_t, OTSubscriberErrorCode) {
      Try subscribing again. */
     OTConnectionTimedOut = 1542,
     
-    /** The subscriber failed because the client is disconnected from the
+    /** The subscriber or captions failed because the client is disconnected from the
      session. */
     OTSubscriberSessionDisconnected = 1010,
     

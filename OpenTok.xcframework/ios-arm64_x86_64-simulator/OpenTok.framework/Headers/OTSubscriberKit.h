@@ -12,6 +12,7 @@ OTSubscriberKitVideoNetworkStats, OTSubscriberKitAudioNetworkStats;
 @protocol OTVideoRender;
 @protocol OTSubscriberKitDelegate;
 @protocol OTSubscriberKitAudioLevelDelegate;
+@protocol OTSubscriberKitCaptionsDelegate;
 @protocol OTSubscriberKitNetworkStatsDelegate;
 @protocol OTSubscriberKitRtcStatsReportDelegate;
 
@@ -128,6 +129,14 @@ typedef NS_ENUM(int32_t, OTSubscriberVideoEventReason) {
 @property (nonatomic, weak)
 id<OTSubscriberKitAudioLevelDelegate> _Nullable audioLevelDelegate;
 
+
+/**
+ * The delegate for receiving captions for this subscriber's stream.
+ *
+ * This is a beta feature.
+ */
+@property (nonatomic, weak)
+id<OTSubscriberKitCaptionsDelegate> _Nullable captionsDelegate;
 /**
  * Whether to subscribe to the stream's audio.
  *
@@ -147,6 +156,13 @@ id<OTSubscriberKitAudioLevelDelegate> _Nullable audioLevelDelegate;
  * set to NO.
  */
 @property(nonatomic) BOOL subscribeToVideo;
+
+/**
+ * Whether to subscribe to captions.
+ *
+ * The default value is the captions value of the stream's publisher <[OTPublisherKit hasCaptions]>
+ */
+@property(nonatomic) BOOL subscribeToCaptions;
 
 /**
  * The video renderer for this instance.
@@ -464,6 +480,24 @@ audioLevelUpdated:(float)audioLevel;
 
 @end
 
+/**
+ * Used for receiving captions for a subscriber's stream.
+ *
+ * This is a beta feature.
+ */
+@protocol OTSubscriberKitCaptionsDelegate <NSObject>
+@optional
+/**
+ * Sent when there is new caption text.
+ *
+ * @param subscriber The subscriber instance being represented.
+ * @param text The caption text.
+ * @param isFinal indicates whether a caption is finished. 
+ */
+- (void)subscriber:(nonnull OTSubscriberKit*)subscriber
+           caption:(NSString*_Nonnull)text
+           isFinal:(BOOL)isFinal;
+@end
 /**
  * Used to monitor audio and video statistics for the subscriber. See
  * <[OTSubscriberKit networkStatsDelegate]>.

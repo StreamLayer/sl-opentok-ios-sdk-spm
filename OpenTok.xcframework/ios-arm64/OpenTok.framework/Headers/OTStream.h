@@ -85,6 +85,14 @@ typedef NS_ENUM(int32_t, OTStreamVideoType) {
 @property(readonly) BOOL hasVideo;
 
 /**
+ * Whether the stream is publishing captions (YES) or not (NO).
+ * See <[OTPublisherKit publishCaptions]> and <[OTSubscriberKit subscribeToCaptions]>.
+ *
+ * This is a beta feature.
+ */
+@property(readonly) BOOL hasCaptions;
+
+/**
  * The current dimensions of the video media track on this stream. 
  * This property can change if a stream published from an
  * iOS device resizes, based on a change in the device orientation, or a change
